@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -15,28 +14,148 @@
   --grayish-blue: hsl(246, 25%, 77%);
 }
 
-body{
-    font-family: "poppins", sans-serif;
-    background:var(--red) url(./images/bg-intro-desktop.png);
+body {
+  font-family: "poppins", sans-serif;
+  background: var(--red) url(./images/bg-intro-desktop.png);
 }
-.container{
-    width: 80%;
-    margin: 10vw auto;
-    height: fit-content;
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: center;
+
+.container {
+  width: 80%;
+  margin: 8vw auto;
+  height: 500px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: center;
     align-items: center; */
 }
-.content{
-    background-color: aqua;
-    width: 50%;
-    /* height: 100%; */
+
+.content {
+  /* background-color: aqua; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 5vw;
+  color: white;
+}
+
+.content h1 {
+  width: 85%;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.validation-part {
+  width: 40%;
+  /* background-color: blue; */
+}
+
+.try {
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.try span{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+form{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
 }
-.validation-part{
-    background-color: blue;
+
+form *:not(:last-child) {
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1.5px solid var(--grayish-blue);
 }
+
+input::placeholder{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+button{
+    background-color: var(--green);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem;
+    cursor: pointer;
+}
+input{
+    font-size: 1rem;
+}
+
+input:focus{
+    border: 1.5px solid var(--dark-blue);
+}
+
+input:invalid{
+    pointer-events: none;
+}
+
+.form p{
+    font-size: 0.7rem;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+
+.form p span{
+    color: var(--red);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
