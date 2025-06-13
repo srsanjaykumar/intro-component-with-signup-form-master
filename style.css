@@ -96,6 +96,7 @@ button {
   font-weight: 600;
   padding: 1rem;
   cursor: pointer;
+  border: none;
   box-shadow: 1px 2px 2px 0px rgba(56, 204, 140, 0.75);
 }
 
@@ -107,14 +108,18 @@ button {
   font-size: 0.9rem;
   font-weight: 600;
   border-radius: 0.5rem;
-  /* outline: none; */
-  /* border: 1.5px solid var(--grayish-blue); */
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
 }
 
-form > *:not(:last-child) {
+/* form > *:not(:last-child) {
   margin-bottom: 1.2rem;
-  /* padding: 1rem; */
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1.5px solid var(--grayish-blue);
+} */
+
+.inp{
+  margin-bottom: 1.2rem;
   border-radius: 0.5rem;
   outline: none;
   border: 1.5px solid var(--grayish-blue);
@@ -137,17 +142,38 @@ input:invalid {
   pointer-events: none;
 }
 
-.form p {
+.agree {
   font-size: 0.7rem;
   color: var(--grayish-blue);
   text-align: center;
+  margin-top: 1rem;
 }
 
-.form p span {
+.form .agree span {
   color: var(--red);
   font-weight: 600;
 }
 
+.error{
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--red);
+  margin-top: -1rem;  
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.error-image{
+  display: block;
+}
 
 @media (max-width: 900px) {
   .container {

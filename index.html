@@ -24,13 +24,21 @@
       <div class="try"><p><span>Try it free 7 days </span> then $20/mo. thereafter</p></div>
       <form class="form">
         <div class="div-1 inp"><input class="first-name " type="text" placeholder="First Name">
-        <img src="./images/icon-error.svg" alt="" srcset="">
+        <img class="hide" src="./images/icon-error.svg" alt="" srcset="">
       </div>
-        <div class="div-2 inp "><input class="last-name" type="text" placeholder="Last Name" ></div>
-        <div class="div-3 inp "><input class="email" type="email" placeholder="Email Address" ></div>
-        <div class="div-4 inp "><input class="password" type="password" placeholder="Password" ></div>
+      <p class="error ">First name cannot be empty</p>
+        <div class="div-2 inp "><input class="last-name" type="text" placeholder="Last Name" >
+          <img class="hide" src="./images/icon-error.svg" alt="" srcset="">
+        </div>
+        <p class="error">Last name cannot be empty </p>
+        <div class="div-3 inp "><input class="email" type="email" placeholder="Email Address" >
+        <img class="hide" src="./images/icon-error.svg" alt="" srcset=""></div>
+        <p class="error">Email cannot be empty</p>
+        <div class="div-4 inp "><input class="password" type="password" placeholder="Password" >
+        <img class="hide" src="./images/icon-error.svg" alt="" srcset=""></div>
+        <p class="error">Password cannot be empty</p>
         <button type="submit">CLAIM YOUR FREE TRIAL</button>
-        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        <p class="agree">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </form>
       
     </div>
