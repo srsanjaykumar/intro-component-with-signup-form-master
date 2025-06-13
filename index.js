@@ -42,7 +42,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
         input_form[index].style.border = "2px solid hsl(0, 93%, 68%)";
       } else if (!validateEmail(input_value)) {
         error_list[index].classList.add("show");
-        error_list[index].innerText = "Please provide a valid email";
+        error_list[index].innerText = "Look like this is not an email";
         error_image[index].classList.add("show");
         input_form[index].style.border = "2px solid hsl(0, 93%, 68%)";
       } else {
